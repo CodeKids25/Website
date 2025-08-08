@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CodeKids – Free Python Classes</title>
 
-
-  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- NAV -->
   <nav>
     <div class="logo">CodeKids</div>
     <ul>
@@ -23,51 +27,20 @@
     </ul>
   </nav>
 
-  
+  <!-- HERO HEADER -->
   <header id="home" data-aos="fade-down">
     <h1>CodeKids</h1>
     <p>Free week-long Python coding classes for kids & beginners. Learn the basics of programming in a fun and interactive way!</p>
     <a href="https://tinyurl.com/codekids25" class="btn">Sign Up Free</a>
   </header>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section id="about" data-aos="fade-up">
     <h2>What is CodeKids?</h2>
     <p>CodeKids is a free online program designed to introduce kids to Python programming. In just one week, we cover the basics of coding, problem-solving, and creative projects—perfect for beginners!</p>
   </section>
 
-  <!-- LEARN -->
-  <section id="learn" data-aos="fade-up" data-aos-delay="100">
-    <h2>What You'll Learn</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Day 1</h3>
-        <p>Introduction to Python</p>
-      </div>
-      <div class="card">
-        <h3>Day 2</h3>
-        <p>Variables and data types</p>
-      </div>
-      <div class="card">
-        <h3>Day 3</h3>
-        <p>Lists in Python</p>
-      </div>
-
-     
-      <div class="centered-pair">
-        <div class="card">
-          <h3>Day 4</h3>
-          <p>User Input and conditionals</p>
-        </div>
-        <div class="card">
-          <h3>Day 5</h3>
-          <p>Try and Except</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DATE INFO -->
+  <!-- DATES SECTION (Moved Above Learn) -->
   <section id="dates" class="dates" data-aos="fade-up" data-aos-delay="200">
     <h2>Class Dates & Times</h2>
     <p>📅 <strong>First Week:</strong> July 14 – July 18</p>
@@ -75,15 +48,66 @@
     <p>🕒 <strong>Schedule:</strong> Monday – Friday, 7:30 PM – 8:30 PM CST</p>
   </section>
 
+  <!-- LEARN SECTION -->
+  <section id="learn" data-aos="fade-up" data-aos-delay="100">
+    <h2>What You'll Learn</h2>
+
+    <div class="learn-list">
+
+      <div class="lesson-row">
+        <div class="day-box">Day 1</div>
+        <div class="lesson">
+          <h3>Introduction to Python</h3>
+          <p>Learn what programming is, why Python is a great beginner-friendly language, and how to run your very first code!</p>
+        </div>
+      </div>
+
+      <div class="lesson-row">
+        <div class="day-box">Day 2</div>
+        <div class="lesson">
+          <h3>Variables & Data Types</h3>
+          <p>Understand how to store information in variables and explore different types of data like text, numbers, and booleans.</p>
+        </div>
+      </div>
+
+      <div class="lesson-row">
+        <div class="day-box">Day 3</div>
+        <div class="lesson">
+          <h3>Lists in Python</h3>
+          <p>Discover how to group values together in lists and access, modify, or loop through them efficiently.</p>
+        </div>
+      </div>
+
+      <div class="lesson-row">
+        <div class="day-box">Day 4</div>
+        <div class="lesson">
+          <h3>User Input & Conditionals</h3>
+          <p>Learn how to make your program interactive with user input and add decision-making using if/else statements.</p>
+        </div>
+      </div>
+
+      <div class="lesson-row">
+        <div class="day-box">Day 5</div>
+        <div class="lesson">
+          <h3>Try & Except (Error Handling)</h3>
+          <p>Handle common errors gracefully and make your programs more robust by anticipating potential problems.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     &copy; 2025 CodeKids 
   </footer>
 
+  <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 800, // animation duration in ms
-      once: true     // animation only once while scrolling down
+      duration: 800,
+      once: true
     });
   </script>
 </body>
